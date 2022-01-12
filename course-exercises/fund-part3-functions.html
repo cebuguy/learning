@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+
+  <script>
+
+    //function that adds 7 to argument
+    function add7(num) {
+      return num + 7;
+    }
+
+    //function that multiplies two arguments
+    let multiply = function(num1,num2) {
+      return num1 * num2;
+    }
+
+    //function that capitalizes first letter of a string
+    let capitalize = (string) => {      
+      let cap = string.slice(0,1)
+      return cap.toUpperCase() + string.slice(1,string.length)
+    }
+
+    //returns last letter of a string
+    function lastLetter(string) {
+      return string.slice(-1);
+    } 
+  </script>
+</body>
+</html>
